@@ -29,7 +29,7 @@ namespace BlazorAdmin.Rbac.Pages.User
         }
 
 
-        private async Task<GridData<UserModel>> GetTableData(GridState<UserModel> gridState)
+        private async Task<GridData<UserModel>> GetTableData(GridState<UserModel> gridState, CancellationToken cancellationToken)
         {
             await InitialData();
             return new GridData<UserModel>() { TotalItems = Users.Count, Items = Users };

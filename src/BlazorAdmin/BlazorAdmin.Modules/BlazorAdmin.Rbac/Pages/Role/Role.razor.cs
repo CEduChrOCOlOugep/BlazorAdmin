@@ -44,7 +44,7 @@ namespace BlazorAdmin.Rbac.Pages.Role
             }
         }
 
-        private async Task<GridData<RoleModel>> GetTableData(GridState<RoleModel> gridState)
+        private async Task<GridData<RoleModel>> GetTableData(GridState<RoleModel> gridState, CancellationToken cancellationToken)
         {
             selectedItems.Clear();
             await InitialData();

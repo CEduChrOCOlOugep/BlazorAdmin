@@ -91,7 +91,7 @@ namespace BlazorAdmin.Log.Pages.AuditLog
                 }).ToList();
         }
 
-        private async Task<GridData<AuditLogModel>> GetTableData(GridState<AuditLogModel> gridState)
+        private async Task<GridData<AuditLogModel>> GetTableData(GridState<AuditLogModel> gridState, CancellationToken cancellationToken)
         {
             await InitialAsync();
             return new GridData<AuditLogModel>() { TotalItems = AuditLogs.Count, Items = AuditLogs };

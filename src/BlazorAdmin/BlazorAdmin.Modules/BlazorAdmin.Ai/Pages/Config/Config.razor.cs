@@ -18,7 +18,7 @@ namespace BlazorAdmin.Ai.Pages.Config
             await base.OnInitializedAsync();
         }
 
-        private async Task<GridData<ConfigModel>> GetTableData(GridState<ConfigModel> state)
+        private async Task<GridData<ConfigModel>> GetTableData(GridState<ConfigModel> state, CancellationToken cancellationToken)
         {
             await InitialData();
             return new GridData<ConfigModel> { TotalItems = Configs.Count, Items = Configs };

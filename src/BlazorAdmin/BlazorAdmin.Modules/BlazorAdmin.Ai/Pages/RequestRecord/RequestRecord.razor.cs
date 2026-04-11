@@ -19,7 +19,7 @@ namespace BlazorAdmin.Ai.Pages.RequestRecord
             await base.OnInitializedAsync();
         }
 
-        private async Task<GridData<RequestRecordModel>> GetTableData(GridState<RequestRecordModel> state)
+        private async Task<GridData<RequestRecordModel>> GetTableData(GridState<RequestRecordModel> state, CancellationToken cancellationToken)
         {
             await InitialData();
             return new GridData<RequestRecordModel> { TotalItems = Records.Count, Items = Records };

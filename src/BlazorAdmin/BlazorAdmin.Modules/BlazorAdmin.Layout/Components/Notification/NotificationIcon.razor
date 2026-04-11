@@ -223,7 +223,7 @@
     private NotificationViewModel? selectedNotification;
     private DialogOptions dialogOptions = new() { MaxWidth = MaxWidth.Medium, FullWidth = true };
     private List<UserViewModel> users = new();
-    private IEnumerable<string> selectedReceivers = new HashSet<string>();
+    private IReadOnlyCollection<string> selectedReceivers = new HashSet<string>();
     private NotificationCreateModel newNotification = new();
 
     private class NotificationViewModel

@@ -15,14 +15,14 @@
 		<PackageReference Include="Blazor-ApexCharts" Version="6.0.2" />
 		<PackageReference Include="Cropper.Blazor" Version="1.5.0" />
 		<PackageReference Include="CrystalQuartz.AspNetCore" Version="7.3.0" />
-		<PackageReference Include="Mapster" Version="9.0.0-pre01" />
+		<PackageReference Include="Mapster" Version="10.0.7" />
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="10.0.1" />
 		<PackageReference Include="Microsoft.SemanticKernel" Version="1.68.0" />
-		<PackageReference Include="MudBlazor" Version="8.15.0" />
-		<PackageReference Include="MudBlazor.Markdown" Version="8.11.0" />
+		<PackageReference Include="MudBlazor" Version="9.3.0" />
+		<PackageReference Include="MudBlazor.Markdown" Version="9.0.0" />
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.1" />
-		<PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.0-rc" />
+		<PackageReference Include="MySql.EntityFrameworkCore" Version="10.0.1" />
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
 		<PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.15.1" />
 		<PackageReference Include="Quartz.Extensions.Hosting" Version="3.15.1" />

@@ -100,7 +100,7 @@
         await dataGrid.ReloadServerData();
     }
 
-    private async Task<GridData<TableModel>> GetTableData(GridState<TableModel> gridState)
+    private async Task<GridData<TableModel>> GetTableData(GridState<TableModel> gridState, CancellationToken cancellationToken)
     {
         await InitialAsync();
         return new GridData<TableModel>() { TotalItems = searchObject.Total, Items = TableData };

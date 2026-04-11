@@ -44,7 +44,7 @@ namespace BlazorAdmin.Log.Pages.LoginLog
             await dataGrid.ReloadServerData();
         }
 
-        private async Task<GridData<LoginLogModel>> GetTableData(GridState<LoginLogModel> gridState)
+        private async Task<GridData<LoginLogModel>> GetTableData(GridState<LoginLogModel> gridState, CancellationToken cancellationToken)
         {
             await InitialAsync();
             return new GridData<LoginLogModel>() { TotalItems = searchObject.Total, Items = LoginLogs };
