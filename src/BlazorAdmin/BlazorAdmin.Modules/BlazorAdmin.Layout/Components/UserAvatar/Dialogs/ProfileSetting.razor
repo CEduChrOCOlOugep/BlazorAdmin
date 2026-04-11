@@ -4,16 +4,16 @@
 
 
 <MudDialog Gutters="false">
-	<DialogContent>
-		<div style="width:800px;height:600px;" class="pa-4">
-			<MudText Typo="Typo.h6">账号设置</MudText>
-			<MudTabs Position="Position.Left" Rounded="true" Class="mt-2" PanelClass="pa-2" Elevation="1"
-					 Style="height:calc(100% - 20px);">
-				<MudTabPanel Text="基本信息" Icon="@Icons.Material.Filled.SettingsApplications" Style="justify-content:start;">
-					<BasicInfoConfig/>
-				</MudTabPanel>
+    <DialogContent>
+        <div style="width:800px;height:600px;" class="pa-4">
+            <MudText Typo="Typo.h6">账号设置</MudText>
+            <MudTabs Position="Position.Left" Rounded="true" Class="mt-2" TabPanelsClass="pa-2" Elevation="1"
+                     Style="height:calc(100% - 20px);">
+                <MudTabPanel Text="基本信息" Icon="@Icons.Material.Filled.SettingsApplications" Style="width:100%;">
+                    <BasicInfoConfig />
+                </MudTabPanel>
 
-			</MudTabs>
-		</div>
-	</DialogContent>
+            </MudTabs>
+        </div>
+    </DialogContent>
 </MudDialog>

@@ -15,20 +15,20 @@
 @rendermode InteractiveServer
 
 <MudMenu Icon="@Icons.Material.Filled.Notifications" Color="Color.Inherit" Dense="true"
-         TransformOrigin="Origin.TopRight">
+         TransformOrigin="Origin.TopRight" >
     <ActivatorContent>
         @if (UnreadCount > 0)
         {
             <MudBadge Content="@UnreadCount" Color="Color.Primary" Class="dense-badge"
                       Overlap="true" Style="margin-right:12px;">
-                <MudIconButton Icon="@Icons.Material.Filled.Notifications" Color="Color.Inherit">
+                <MudIconButton Icon="@Icons.Material.Filled.Notifications" Color="Color.Inherit" OnClick="@context.ToggleAsync">
                 </MudIconButton>
             </MudBadge>
         }
         else
         {
             <MudIconButton Icon="@Icons.Material.Filled.Notifications" Color="Color.Inherit"
-                           Style="margin-right:12px;">
+                           Style="margin-right:12px;" OnClick="@context.ToggleAsync">
             </MudIconButton>
         }
     </ActivatorContent>

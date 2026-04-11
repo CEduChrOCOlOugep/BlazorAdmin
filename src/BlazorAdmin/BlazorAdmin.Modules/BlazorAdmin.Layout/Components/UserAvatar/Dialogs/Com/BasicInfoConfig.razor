@@ -12,8 +12,8 @@
                     <MudText>头像</MudText>
                     <MudSpacer />
                     <MudFileUpload Class="flex-none" T="IBrowserFile" FilesChanged="UploadFiles" Accept=".png, .jpg">
-                        <ActivatorContent>
-                            <MudIconButton>
+                        <CustomContent Context="fileUpload">
+                            <MudIconButton OnClick="@fileUpload.OpenFilePickerAsync">
                                 @if (string.IsNullOrEmpty(_user.Avatar))
                                 {
                                     <MudAvatar Color="Color.Primary">
@@ -27,7 +27,9 @@
                                     </MudAvatar>
                                 }
                             </MudIconButton>
-                        </ActivatorContent>
+                        </CustomContent>
+                        <SelectedTemplate>
+                        </SelectedTemplate>
                     </MudFileUpload>
                 </div>
             </MudListItem>
@@ -43,7 +45,7 @@
                     else
                     {
                         <MudTextField @bind-Value="_editUserName" Immediate="true" @onblur="EditUserNameBlur"
-                                    Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
+                                      Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
                     }
                 </div>
             </MudListItem>
@@ -59,7 +61,7 @@
                     else
                     {
                         <MudTextField @bind-Value="_editRealName" Immediate="true" @onblur="EditRealNameBlur"
-                                    Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
+                                      Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
                     }
                 </div>
             </MudListItem>
@@ -75,7 +77,7 @@
                     else
                     {
                         <MudTextField @bind-Value="_editEmail" Immediate="true" @onblur="EditEmailBlur"
-                                    Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
+                                      Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
                     }
                 </div>
             </MudListItem>
@@ -91,7 +93,7 @@
                     else
                     {
                         <MudTextField @bind-Value="_editPhone" Immediate="true" @onblur="EditPhoneBlur"
-                                    Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
+                                      Margin="Margin.Dense" Variant="Variant.Outlined" AutoFocus="true"></MudTextField>
                     }
                 </div>
             </MudListItem>

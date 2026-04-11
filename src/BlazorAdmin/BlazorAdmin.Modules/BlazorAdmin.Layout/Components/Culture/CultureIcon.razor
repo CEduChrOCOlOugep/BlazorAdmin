@@ -7,7 +7,7 @@
     <MudMenu Color="Color.Inherit" Dense="true"
              AnchorOrigin="Origin.BottomLeft" TransformOrigin="Origin.TopRight">
         <ActivatorContent>
-            <MudIcon Icon="@Icons.Material.Filled.Language" Size="Size.Small" Color="Color.Inherit"  />
+            <MudIcon Icon="@Icons.Material.Filled.Language" Size="Size.Small" Color="Color.Inherit" @onclick="@context.ToggleAsync" />
             <MudText Typo="Typo.caption" Color="Color.Surface">@_loc["CultureLanguage"]</MudText>
         </ActivatorContent>
         <ChildContent>

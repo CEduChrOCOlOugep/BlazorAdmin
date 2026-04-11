@@ -9,13 +9,13 @@
     <ActivatorContent>
         @if (string.IsNullOrEmpty(_avatar))
         {
-            <MudAvatar Size="Size.Small" Color=" Color.Primary">
+            <MudAvatar Size="Size.Small" Color=" Color.Primary" @onclick="@context.ToggleAsync">
                 @_userName.FirstOrDefault()
             </MudAvatar>
         }
         else
         {
-            <MudAvatar Size="Size.Small">
+            <MudAvatar Size="Size.Small" @onclick="@context.ToggleAsync">
                 <MudImage Src="@("Avatars/" + _avatar)"></MudImage>
             </MudAvatar>
         }
